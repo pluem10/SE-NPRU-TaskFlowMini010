@@ -88,3 +88,200 @@ body {
   padding: 5px 10px;
   cursor: pointer;
 }
+/* TOAST */
+.toast {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  animation: slideIn 0.3s ease;
+  z-index: 999;
+}
+
+.toast.success {
+  background: #22c55e;
+  box-shadow: 0 0 10px #22c55e;
+}
+
+.toast.error {
+  background: #ef4444;
+  box-shadow: 0 0 10px #ef4444;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+/* SIDEBAR */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #020617;
+  border-right: 1px solid #22c55e;
+  padding: 20px;
+  position: fixed;
+}
+
+.sidebar .logo {
+  color: #22c55e;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px #22c55e;
+}
+
+.sidebar button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: transparent;
+  border: 1px solid #22c55e;
+  color: #22c55e;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.sidebar button:hover {
+  background: #22c55e;
+  color: black;
+  box-shadow: 0 0 10px #22c55e;
+}
+/* NEON TEXT */
+.neon {
+  color: #22c55e;
+  text-shadow:
+    0 0 5px #22c55e,
+    0 0 10px #22c55e,
+    0 0 20px #22c55e;
+}
+
+/* GLOW CARD */
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow:
+    0 0 10px #22c55e,
+    0 0 20px #22c55e;
+  transform: scale(1.03);
+}
+/* Background */
+.register-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Glass Card */
+.glass-card {
+  width: 320px;
+  padding: 30px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(0, 255, 150, 0.2);
+  box-shadow: 0 0 30px rgba(0, 255, 150, 0.2);
+  text-align: center;
+}
+
+/* Title */
+.title {
+  color: #00ffae;
+  margin-bottom: 20px;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+/* Input Group */
+.input-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #555;
+  color: white;
+  font-size: 14px;
+}
+
+.input-group label {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  color: #888;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Floating Label */
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+  top: -10px;
+  font-size: 12px;
+  color: #00ffae;
+}
+
+/* Neon Button */
+.neon-btn {
+  width: 100%;
+  padding: 10px;
+  background: transparent;
+  border: 2px solid #00ffae;
+  color: #00ffae;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.neon-btn:hover {
+  background: #00ffae;
+  color: black;
+  box-shadow:
+    0 0 15px #00ffae,
+    0 0 40px #00ffae;
+}
+
+/* Login text */
+.login-text {
+  margin-top: 15px;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.login-text span {
+  color: #00ffae;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.login-text span:hover {
+  text-decoration: underline;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+}
